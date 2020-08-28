@@ -1,3 +1,7 @@
+@font-face{
+    font-family: 'Poppins';
+    src:('https://fonts.google.com/specimen/Poppins')
+}
 html{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -18,9 +22,16 @@ body{
     color:white;
     font-size: 16px;
     font-weight: 400;
+   font-family: 'Poppins',sans-serif;
 }
 h1{
-    padding:10%;
+    padding:0 10% ;
     font-weight:700;
 }
 
+p{
+    padding:0 5%;
+    font-size:1.2em
+    /* margin:0 5% */
+    
+}
