@@ -39,7 +39,7 @@ p{
 #trial-con{
     background-color: hsl(248, 32%, 49%);
     margin:30px 10%;
-    width: 300px;
+    width: 80%;
     height: 120px;
     padding:15px 25px;
     border-radius: 10px;
@@ -88,10 +88,48 @@ span{
 
 
 @media screen and (min-width:1440px){
-   #main-con{ 
+   body{
+       margin:80px 150px; 
+       
+   }
+    #main-con{ 
        display:grid;
-    grid-template:1fr/1fr 1fr;
+    grid-template:1fr 1fr/1fr 1fr;
+    grid-template-areas: "HeadingText TrialText"
+                "BodyText Form";
                     
 }
+    #heading-text{
+        grid-area: HeadingText;
+        margin-top:200px;
+        font-size:3.5em;
+        margin-left:-50px;
+        text-align:left
+    }
+    #body-text{
+        grid-area:BodyText;
+        text-align: left;
+        padding-left:20px;
+        font-size:1.1em;
+        /* margin-bottom:40px */
+    }
+    #trial-con{
+        grid-area:TrialText;
+        width: 95%;
+        height:70px;
+        padding-top:1px
+        /* text-align: right; */
+        /* margin-bottom: 100px; */
+    }
+    #form-con{
+        grid-area:Form;
+        margin-top:-250px;
+        height:500px;
+        width:95%
+        
+    }
+    #terms{
+        margin-top:0
+    }
 }
 
