@@ -88,7 +88,7 @@ span{
 
 
 @media screen and (min-width:1440px){
-   body{ 
+   #main-con{ 
        display:grid;
     grid-template:1fr/1fr 1fr;
                     
