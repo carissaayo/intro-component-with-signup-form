@@ -70,8 +70,6 @@ button{
     border-radius: 10px;
     font-size: 1em;
     text-transform: uppercase;
-    /* padding: 0 10%; */
-    /* margin-left:10px; */
     border: 1px solid hsl(246, 25%, 77%);
 }
 
@@ -82,9 +80,7 @@ button{
     padding:10px;
     line-height: 1.6;
 }
-span{
-    color:hsl(0, 100%, 74%)
-} 
+
 .errorP{
     color:hsl(0, 100%, 74%);
     margin:0;
@@ -92,6 +88,7 @@ span{
     font-size:0.7em;
     display: none;
 }
+/* In order to push the submit button down a bit */
 #password{
     margin-bottom:10px
 }

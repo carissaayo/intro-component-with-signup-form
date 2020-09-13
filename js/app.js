@@ -8,25 +8,26 @@ let group = [FirstName,LastName,password,EmailAddress];
 let pattern = /^([a-z\d-\.]+)@([a-z\d-]+)\.([a-z]{2,5})(\.{2,5})?$/i; 
 
 function overAll(group,inputs){
+    // FirstName
     if (inputs[0].value == '') {
 
         FirstName.style.display = 'block'
     }
+    //LAstName
     if (inputs[1].value == '') {
 
         LastName.style.display = 'block'
     }
+    //Email
     if (!pattern.test(inputs[2].value)) {
 
         EmailAddress.style.display = 'block'
     }
+    //Password
     if (inputs[3].value == '') {
 
         password.style.display = 'block'
     }
-}
-function email(EmailAddress){
-
 }
 
 button.addEventListener('click',()=>{
