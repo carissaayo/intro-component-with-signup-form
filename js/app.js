@@ -1,24 +1,36 @@
 let inputs = document.querySelectorAll('input');
+let FirstName = document.getElementById('FirstName')
+let LastName = document.getElementById('LastName')
+let EmailAddress = document.getElementById('EmailAddress')
+let password = document.getElementById('password')
+let button = document.querySelector('button');
+let group = [FirstName,LastName,password,EmailAddress];
+let pattern = /(\w-_){5,20}@(\w{2,10}\.())/; 
 
-let patterns ={
-    FirstName: /^[a-z]{4,}$/i,
-    LastName: /^[a-z]{4,}$/i,
-    EmailAddress: /^([a-z\d-\.]+)@([a-z\d-]+)\.([a-z]{2,5})(\.{2,5})?$/i,
-    password: /^[a-z\d@%-&*]{7,15}$/,
-}
-inputs.forEach((input)=>{
-   input.addEventListener('keyup',(e)=>{
-       validate(e.target,patterns[e.target.attributes.name.value])
-   })
-}
-)
-function validate(field,regex){
-    if(regex.test(field.value)){
-    field.className = 'valid'     
-    }else{
-        field.className ='invalid'
+function overAll(group,inputs){
+    if (inputs[0].value == '') {
+
+        FirstName.style.display = 'block'
     }
+    if (inputs[1].value == '') {
+
+        LastName.style.display = 'block'
+    }
+    if (inputs[2].value == '') {
+
+        EmailAddress.style.display = 'block'
+    }
+    if (inputs[3].value == '') {
+
+        password.style.display = 'block'
+    }
+}
+function email(EmailAddress){
 
 }
 
+button.addEventListener('click',()=>{
+    overAll(group,inputs)
+})
+ 
 
