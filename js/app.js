@@ -5,7 +5,7 @@ let EmailAddress = document.getElementById('EmailAddress')
 let password = document.getElementById('password')
 let button = document.querySelector('button');
 let group = [FirstName,LastName,password,EmailAddress];
-let pattern = /(\w-_){5,20}@(\w{2,10}\.())/; 
+let pattern = /^([a-z\d-\.]+)@([a-z\d-]+)\.([a-z]{2,5})(\.{2,5})?$/i; 
 
 function overAll(group,inputs){
     if (inputs[0].value == '') {
@@ -16,7 +16,7 @@ function overAll(group,inputs){
 
         LastName.style.display = 'block'
     }
-    if (inputs[2].value == '') {
+    if (!pattern.test(inputs[2].value)) {
 
         EmailAddress.style.display = 'block'
     }
