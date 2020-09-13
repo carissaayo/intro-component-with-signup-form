@@ -85,6 +85,14 @@ button{
 span{
     color:hsl(0, 100%, 74%)
 } 
+.errorP{
+    color:hsl(0, 100%, 74%);
+    margin:0;
+    text-align:right;
+    font-size:0.7em;
+    display: none;
+}
+
 
 
 @media screen and (min-width:1440px){
