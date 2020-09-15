@@ -11,7 +11,8 @@ function overAll(group,inputs){
     // FirstName
     if (inputs[0].value == '') {
 
-        FirstName.style.display = 'block'
+        FirstName.style.display = 'block';
+        inputs[0].style.borderColor= ;
     }
     //LAstName
     if (inputs[1].value == '') {
